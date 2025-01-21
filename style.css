@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+:root {
+    --black: rgb(17, 17, 17);
+    --orange: rgb(254, 163, 1);
+    --sky-blue: rgb(1, 172, 253);
+    --turquoise: rgb(5, 212, 223);
+    --lavender-blue: rgb(93, 88, 239);
+}
+
+.default {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+}
+
+#menu-icon {
+    display: none;
+}
+
+.page-name {
+    display: flex;
+    align-items: center;
+}
+
+.page-name img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.page-name h1 {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links li {
+    display: inline;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.links li:nth-child(1) {
+    color: var(--orange);
+}
+
+.links li:nth-child(2) {
+    color: var(--sky-blue);
+}
+
+.links li:nth-child(3) {
+    color: var(--turquoise);
+}
+
+.links li:nth-child(4) {
+    color: var(--lavender-blue);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav button {
+    padding: 0.7vw 3vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    background: var(--orange);
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: var(--sky-blue);
+}
+
+.banner {
+    padding: 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    max-width: 55%;
+}
+
+.banner-text h1 {
+    font-size: 4.1vw;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-text span:nth-child(1) {
+    color: var(--orange);
+}
+
+.banner-text span:nth-child(2) {
+    color: var(--sky-blue);
+}
+
+.banner-text p {
+    font-size: 1.3vw;
+    margin-bottom: 30px;
+}
+
+.banner-text button {
+    padding: 0.7vw 3vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--black);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner-text button:hover {
+    background-color: white;
+    color: var(--black);
+}
+
+.banner-img {
+    max-width: 45%;
+}
+
+.dashed {
+    border: 0.2px dashed transparent;
+    background-image: linear-gradient(90deg, rgb(202, 201, 201) 50%, transparent 50%);
+    background-size: 1.3vw 0.2vw;
+    background-repeat: repeat;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+    nav {
+        padding: 1rem 1rem;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+
+    nav h1,
+    nav ul,
+    nav button {
+        display: none;
+    }
+
+    .banner {
+        padding: 1rem 1rem;
+
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .dashed {
+        display: none;
+    }
+
+    .banner-text,
+    .banner img {
+        max-width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 9vw;
+    }
+
+    .banner-text p {
+        font-size: 4vw;
+    }
+
+    .banner-text button {
+        padding: 3vw 7vw;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+
+}
