@@ -124,7 +124,7 @@ nav button:hover {
 }
 
 .banner-text h1 {
-    font-size: 4.1vw;
+    font-size: 3.7vw;
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: 20px;
@@ -193,7 +193,7 @@ main h1 {
 }
 
 .curriculum-container h3 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
@@ -205,11 +205,28 @@ main h1 {
     color: rgb(128, 128, 128);
 }
 
+.curriculum-container a {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.curriculum-container > div:nth-child(1) a {
+    color: rgb(100, 200, 255);
+}
+
+.curriculum-container > div:nth-child(2) a {
+    color: rgb(240, 170, 0);
+}
+
+.curriculum-container > div:nth-child(3) a {
+    color: rgb(135, 0, 255);
+}
+
 .curriculum-container div {
     flex: 1 1 30%;
-    max-width: 100%;
+    max-width: 40%;
     min-width: 280px;
-
+    height: 28rem;
     padding: 3vw;
     display: flex;
     flex-direction: column;
@@ -319,7 +336,8 @@ main h1 {
 
     .curriculum-container div {
         padding: 10vw 10vw;
-        gap: 4vw
+        gap: 4vw;
+        max-width: 95%;
     }
 
 }
