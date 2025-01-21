@@ -294,10 +294,30 @@ main h1 {
     font-weight: bold;
 }
 
+.our-stories {
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    overflow: hidden;
+}
+
+.our-stories button {
+    display: block;
+    margin: 3% auto;
+    padding: 0.7vw 3vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--black);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
 
-
-
+.our-stories button:hover {
+    background-color: white;
+    color: var(--black);
+}
 
 
 
@@ -385,6 +405,13 @@ main h1 {
 
     .arrow {
         display: none;
+    }
+
+    .our-stories button {
+        padding: 3vw 7vw;
+        margin: 6% auto;
+        border-radius: 8px;
+        font-size: 1rem;
     }
 
 }
