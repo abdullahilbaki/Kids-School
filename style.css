@@ -315,16 +315,57 @@ main h1 {
 
 
 .our-stories button:hover {
-    background-color: white;
+    background-color: rgba(247, 219, 172, 0.3);
     color: var(--black);
 }
 
+footer {
+    max-width: 100%;
+    background: var(--sky-blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5vw 9vw;
+    gap: 5vw;
+}
+
+footer>div {
+    max-width: 30%;
+}
 
 
+.footer-h1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
 
+.footer-h1 h1 {
+    width: auto;
+    font-size: 2.8vw;
+    font-weight: 700;
 
+}
 
+footer h6,
+footer h5 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
 
+.footer-links {
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.7vw;
+    flex-wrap: wrap;
+}
 
 
 
@@ -412,6 +453,25 @@ main h1 {
         margin: 6% auto;
         border-radius: 8px;
         font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20vw 5vw;
+    }
+
+    footer div {
+        max-width: 90%;
+    }
+
+    .footer-h1 h1 {
+        font-size: 9vw;
+    }
+
+    footer h5,
+    footer h6 {
+        margin-top: 5vw;
+        font-size: 7vw;
     }
 
 }
