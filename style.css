@@ -210,15 +210,15 @@ main h1 {
     font-weight: 700;
 }
 
-.curriculum-container > div:nth-child(1) a {
+.curriculum-container>div:nth-child(1) a {
     color: rgb(100, 200, 255);
 }
 
-.curriculum-container > div:nth-child(2) a {
+.curriculum-container>div:nth-child(2) a {
     color: rgb(240, 170, 0);
 }
 
-.curriculum-container > div:nth-child(3) a {
+.curriculum-container>div:nth-child(3) a {
     color: rgb(135, 0, 255);
 }
 
@@ -266,6 +266,49 @@ main h1 {
     width: 7rem;
     height: auto;
 }
+
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2.5rem 0;
+}
+
+
+.arrow i {
+    font-size: 3rem;
+    color: var(--orange);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.arrow i:hover {
+    transform: scale(1.2);
+    color: var(--sky-blue);
+}
+
+.arrow i.active {
+    color: var(--sky-blue);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,6 +381,10 @@ main h1 {
         padding: 10vw 10vw;
         gap: 4vw;
         max-width: 95%;
+    }
+
+    .arrow {
+        display: none;
     }
 
 }
