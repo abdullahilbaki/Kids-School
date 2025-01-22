@@ -112,6 +112,11 @@ nav button:hover {
     background: var(--sky-blue);
 }
 
+marquee {
+    font-size: 1.5rem;
+    color: gray;
+}
+
 .banner {
     padding: 2rem 2rem 0;
     display: flex;
@@ -481,6 +486,10 @@ footer h5 {
     nav ul,
     nav button {
         display: none;
+    }
+
+    marquee {
+        margin: 1rem 0;
     }
 
     .banner {
