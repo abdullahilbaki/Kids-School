@@ -564,7 +564,7 @@ footer h5 {
 
     footer {
         flex-direction: column;
-        padding: 20vw 5vw;
+        padding: 10vw 5vw;
     }
 
     footer div {
@@ -572,13 +572,13 @@ footer h5 {
     }
 
     .footer-h1 h1 {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     footer h5,
     footer h6 {
-        margin-top: 5vw;
-        font-size: 7vw;
+        margin-top: 5.5vw;
+        font-size: 5.5vw;
     }
 
 
