@@ -299,7 +299,95 @@ main h1 {
     overflow: hidden;
 }
 
-.our-stories button {
+.our-stories-cards {
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 20% 20% 26% 26%;
+
+    gap: 2vw;
+
+}
+
+
+
+.card {
+    position: relative;
+    border-radius: 1rem;
+    background: white;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card button {
+    position: relative;
+    top: -1rem;
+    border: none;
+    margin: auto 8%;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    background: rgb(149, 178, 38);
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 1rem 8%;
+    font-size: 1.3vw;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.card-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card-1 h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.card-1 p {
+    color: rgb(102, 102, 102);
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.7vw;
+    margin: 1.6rem 9% 4rem 8%;
+}
+
+.card-1 button {
+    background: rgb(60, 216, 232);
+}
+
+.card-1 img {
+    height: 50%;
+}
+
+.card-3 button {
+    background: rgb(93, 88, 240);
+}
+
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.view-all-btn {
     display: block;
     margin: 3% auto;
     padding: 0.7vw 3vw;
@@ -314,7 +402,7 @@ main h1 {
 }
 
 
-.our-stories button:hover {
+.view-all-btn:hover {
     background-color: rgba(247, 219, 172, 0.3);
     color: var(--black);
 }
@@ -448,11 +536,30 @@ footer h5 {
         display: none;
     }
 
-    .our-stories button {
+    .view-all-btn {
         padding: 3vw 7vw;
-        margin: 6% auto;
+        margin: 6% auto 12%;
         border-radius: 8px;
         font-size: 1rem;
+    }
+
+    .our-stories-cards {
+        padding: 1.5rem 1.5rem;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card h2 {
+        font-size: 2.5vw;
+        margin: auto 8%;
+    }
+
+    .card button {
+        font-size: 1.8vw;
+    }
+
+    .card-1 {
+        display: none;
     }
 
     footer {
@@ -473,5 +580,7 @@ footer h5 {
         margin-top: 5vw;
         font-size: 7vw;
     }
+
+
 
 }
